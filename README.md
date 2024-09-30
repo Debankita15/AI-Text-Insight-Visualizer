@@ -11,8 +11,9 @@ The app is hosted using **ngrok** on **Google Colab**, leveraging **Streamlit** 
 ## Features
 
 - **Text Upload**: Upload `.txt` or `.csv` files to analyze the text content.
-- **Summarization**: Generate summaries using **Hugging Face Transformers** models.
-- **Sentiment Analysis**: Analyze the sentiment (positive/negative/neutral) of the text using **Hugging Face Transformers**.
+- **Pretraied LLM used**: Utilizes **Hugging Face Transformers** for text summarization and sentiment analysis, which are built on pre-trained LLMs.
+  - **Summarization**: The model **sshleifer/distilbart-cnn-12-6** from Hugging Face is a variant of BART (Bidirectional and Auto-Regressive Transformers), which is an LLM designed for natural language generation tasks like summarization.
+  - **Sentiment Analysis**: The model d**istilbert-base-uncased-finetuned-sst-2-english** from Hugging Face is a version of BERT (Bidirectional Encoder Representations from Transformers) used for sentiment analysis, which is also a pre-trained LLM fine-tuned for specific tasks.
 - **Theme Extraction**: Extract keywords and themes from the text using **YAKE** and **Gensim LDA topic modeling**.
 - **Visualization**:
   - Sentiment Distribution Pie Chart.
